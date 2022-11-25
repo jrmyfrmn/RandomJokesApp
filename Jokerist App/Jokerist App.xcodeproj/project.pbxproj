@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1267871A292F07D00001A121 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12678719292F07D00001A121 /* AppDelegate.swift */; };
 		1267871C292F07D00001A121 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1267871B292F07D00001A121 /* SceneDelegate.swift */; };
-		1267871E292F07D00001A121 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1267871D292F07D00001A121 /* ViewController.swift */; };
+		1267871E292F07D00001A121 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1267871D292F07D00001A121 /* MainScreenView.swift */; };
 		12678721292F07D00001A121 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1267871F292F07D00001A121 /* Main.storyboard */; };
 		12678723292F07D20001A121 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12678722292F07D20001A121 /* Assets.xcassets */; };
 		12678726292F07D20001A121 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12678724292F07D20001A121 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		12678716292F07D00001A121 /* Jokerist App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jokerist App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12678719292F07D00001A121 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1267871B292F07D00001A121 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1267871D292F07D00001A121 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1267871D292F07D00001A121 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
 		12678720292F07D00001A121 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		12678722292F07D20001A121 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12678725292F07D20001A121 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,13 +58,21 @@
 			children = (
 				12678719292F07D00001A121 /* AppDelegate.swift */,
 				1267871B292F07D00001A121 /* SceneDelegate.swift */,
-				1267871D292F07D00001A121 /* ViewController.swift */,
+				12A9DE8C2930BD4900D0B0E8 /* Views */,
 				1267871F292F07D00001A121 /* Main.storyboard */,
 				12678722292F07D20001A121 /* Assets.xcassets */,
 				12678724292F07D20001A121 /* LaunchScreen.storyboard */,
 				12678727292F07D20001A121 /* Info.plist */,
 			);
 			path = "Jokerist App";
+			sourceTree = "<group>";
+		};
+		12A9DE8C2930BD4900D0B0E8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1267871D292F07D00001A121 /* MainScreenView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1267871E292F07D00001A121 /* ViewController.swift in Sources */,
+				1267871E292F07D00001A121 /* MainScreenView.swift in Sources */,
 				1267871A292F07D00001A121 /* AppDelegate.swift in Sources */,
 				1267871C292F07D00001A121 /* SceneDelegate.swift in Sources */,
 			);

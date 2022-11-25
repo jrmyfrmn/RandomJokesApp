@@ -29,9 +29,9 @@ class ViewController: UIViewController {
     
     private var dataTask: URLSessionDataTask?
     
-    private var joke: Joke? {
+    private var joke: [Joke]? {
         didSet {
-            guard let joke = joke else { return }
+            guard let joke = joke?.randomElement() else { return }
             label.text = "\(joke.setup)\n\(joke.punchline)"
             label.sizeToFit()
         }
@@ -40,7 +40,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        view.backgroundColor = .blue
         view.addSubview(label)
         view.addSubview(refreshButton)
         setConstraints()
@@ -64,7 +64,7 @@ class ViewController: UIViewController {
         dataTask?.cancel()
         dataTask = URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data else { return }
-            if let decodedData = try? JSONDecoder().decode(Joke.self, from: data) {
+            if let decodedData = try? JSONDecoder().decode([Joke].self, from: data) {
                 DispatchQueue.main.async {
                     self.joke = decodedData
                 }
