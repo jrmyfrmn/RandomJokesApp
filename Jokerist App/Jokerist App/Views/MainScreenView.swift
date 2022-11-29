@@ -27,9 +27,11 @@ class MainScreenView: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
     }
     
+    //MARK: - URL SESSION
     private var dataTask: URLSessionDataTask?
     
-    private var joke: [Joke]? {
+    //MARK: JOKES VARIABLE
+    private var joke: [Jokes]? {
         didSet {
             guard let joke = joke?.randomElement() else { return }
             label.text = "\(joke.setup)\n\(joke.punchline)"
@@ -53,22 +55,12 @@ class MainScreenView: UIViewController {
     //MARK: FAVE BUTTON CONSTRAINTS
     func addButtonConstraints() {
         view.addSubview(faveButton)
+        
         faveButton.translatesAutoresizingMaskIntoConstraints = false
-//        faveButton.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 10).isActive = true
-//        faveButton.leadingAnchor.constraint(equalTo: label.centerXAnchor).isActive = true
-
-        NSLayoutConstraint.activate([
-            //faveButton.leadingAnchor.constraint(equalTo: view.leadingAnchor),//.isActive = true
-            faveButton.bottomAnchor.constraint(equalTo:view.safeAreaLayoutGuide.bottomAnchor),
-            faveButton.widthAnchor.constraint(equalToConstant: 210),
-            faveButton.heightAnchor.constraint(equalToConstant: 50)
-//            faveButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-//            faveButton.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            
-//            faveButton.widthAnchor.constraint(equalToConstant: 210),
-//            faveButton.heightAnchor.constraint(equalToConstant: 50)
-
-        ])
+        faveButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        faveButton.widthAnchor.constraint(equalToConstant: 280).isActive = true
+        faveButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        faveButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -200).isActive = true
     }
     
     //MARK: GO TO FAVE SCREEN
@@ -92,29 +84,28 @@ class MainScreenView: UIViewController {
     //MARK: REFRESH BUTTON
     private lazy var refreshButton: UIButton = {
         let button = UIButton(frame: .zero)
-        //let image = UIImage(systemName: "arrow.clockwise")
+
         button.setTitle("Next", for: .normal)
-        //button.setImage(image, for: .normal)
         button.addTarget(self, action: #selector(loadData), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitleColor(.white, for: .normal)
-        button.layer.cornerRadius = 10
+        button.layer.cornerRadius = 20
         button.backgroundColor = .systemFill
         return button
     }()
     
-
-
 //MARK: LABEL AND REFRESH BUTTON CONSTRAINTS
     private func setConstraints() {
         label.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50).isActive = true
         label.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50).isActive = true
         label.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        refreshButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        refreshButton.widthAnchor.constraint(equalToConstant: 50).isActive = true
         refreshButton.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 10).isActive = true
-        refreshButton.leadingAnchor.constraint(equalTo: label.centerXAnchor).isActive = true
+        refreshButton.leadingAnchor.constraint(equalTo: label.leadingAnchor).isActive = true
     }
     
-    //MARK: JOKES API
+    //MARK: LOAD DATA
     @objc private func loadData() {
         guard let url = URL(string: "https://official-joke-api.appspot.com/random_ten") else {
             return
@@ -123,7 +114,7 @@ class MainScreenView: UIViewController {
         dataTask?.cancel()
         dataTask = URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data else { return }
-            if let decodedData = try? JSONDecoder().decode([Joke].self, from: data) {
+            if let decodedData = try? JSONDecoder().decode([Jokes].self, from: data) {
                 DispatchQueue.main.async {
                     self.joke = decodedData
                 }
@@ -132,11 +123,4 @@ class MainScreenView: UIViewController {
         // Send Request
         dataTask?.resume()
     }
-}
-
-struct Joke: Decodable {
-    let id: Int
-    let type: String
-    let setup: String
-    let punchline: String
 }
