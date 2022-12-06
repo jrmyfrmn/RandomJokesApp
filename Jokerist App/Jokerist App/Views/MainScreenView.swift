@@ -113,17 +113,6 @@ class MainScreenView: UIViewController {
         }
     }
     
-//    @objc fileprivate func faveButton(sender: UIButton) {
-//        print("Add to favorites!")
-//        self.animateView(sender)
-//    }
-//
-//    fileprivate func animateView(_ viewToAnimate: UIView) {
-//        UIView.animate(withDuration: 0.15, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: .curveEaseIn, animations: {
-//            viewToAnimate.transform = CGAffineTransform(scaleX: 1, y: 1)
-//        }, completion: nil)
-//    }
-    
     private func setConstraints() {
         
         label.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true

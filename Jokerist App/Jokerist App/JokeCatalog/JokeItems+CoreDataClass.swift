@@ -9,7 +9,8 @@
 import Foundation
 import CoreData
 
-@objc(JokeItems)
-public class JokeItems: NSManagedObject {
+//@objc(JokeItems)
+//public class JokeItems: NSManagedObject {
+//
+//}
 
-}

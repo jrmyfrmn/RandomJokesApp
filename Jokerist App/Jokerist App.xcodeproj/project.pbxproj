@@ -14,9 +14,6 @@
 		12678726292F07D20001A121 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12678724292F07D20001A121 /* LaunchScreen.storyboard */; };
 		12A9DE902934CAEA00D0B0E8 /* ListOfFaveScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A9DE8F2934CAEA00D0B0E8 /* ListOfFaveScreen.swift */; };
 		12A9DE932935CAE800D0B0E8 /* Jokes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A9DE922935CAE800D0B0E8 /* Jokes.swift */; };
-		12A9DE992935FF3700D0B0E8 /* Extension in Resources */ = {isa = PBXBuildFile; fileRef = 12A9DE982935FF3700D0B0E8 /* Extension */; };
-		12A9DE9D2938472200D0B0E8 /* JokeItems+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A9DE9C2938472200D0B0E8 /* JokeItems+CoreDataProperties.swift */; };
-		12A9DE9F2938472400D0B0E8 /* JokeItems+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A9DE9E2938472400D0B0E8 /* JokeItems+CoreDataClass.swift */; };
 		12A9DEA52938479B00D0B0E8 /* JokeristViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A9DEA42938479B00D0B0E8 /* JokeristViewModel.swift */; };
 		12A9DEA82938486000D0B0E8 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A9DEA72938486000D0B0E8 /* WebService.swift */; };
 		12A9DEAE293849BF00D0B0E8 /* JokeCatalogData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 12A9DEAC293849BF00D0B0E8 /* JokeCatalogData.xcdatamodeld */; };
@@ -35,9 +32,6 @@
 		12678727292F07D20001A121 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12A9DE8F2934CAEA00D0B0E8 /* ListOfFaveScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfFaveScreen.swift; sourceTree = "<group>"; };
 		12A9DE922935CAE800D0B0E8 /* Jokes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jokes.swift; sourceTree = "<group>"; };
-		12A9DE982935FF3700D0B0E8 /* Extension */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Extension; sourceTree = "<group>"; };
-		12A9DE9C2938472200D0B0E8 /* JokeItems+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JokeItems+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		12A9DE9E2938472400D0B0E8 /* JokeItems+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JokeItems+CoreDataClass.swift"; sourceTree = "<group>"; };
 		12A9DEA42938479B00D0B0E8 /* JokeristViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokeristViewModel.swift; sourceTree = "<group>"; };
 		12A9DEA72938486000D0B0E8 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		12A9DEAD293849BF00D0B0E8 /* JokeCatalogData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JokeCatalogData.xcdatamodel; sourceTree = "<group>"; };
@@ -83,7 +77,6 @@
 				12A9DE912935CAA100D0B0E8 /* Model */,
 				12A9DE8C2930BD4900D0B0E8 /* Views */,
 				12A9DEB82938872800D0B0E8 /* API */,
-				12A9DE982935FF3700D0B0E8 /* Extension */,
 				12A9DEA62938482400D0B0E8 /* Services */,
 				12678722292F07D20001A121 /* Assets.xcassets */,
 				12678724292F07D20001A121 /* LaunchScreen.storyboard */,
@@ -114,8 +107,6 @@
 		12A9DEA02938473400D0B0E8 /* JokeCatalog */ = {
 			isa = PBXGroup;
 			children = (
-				12A9DE9E2938472400D0B0E8 /* JokeItems+CoreDataClass.swift */,
-				12A9DE9C2938472200D0B0E8 /* JokeItems+CoreDataProperties.swift */,
 			);
 			path = JokeCatalog;
 			sourceTree = "<group>";
@@ -212,7 +203,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				12678726292F07D20001A121 /* LaunchScreen.storyboard in Resources */,
-				12A9DE992935FF3700D0B0E8 /* Extension in Resources */,
 				12678723292F07D20001A121 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,8 +221,6 @@
 				12A9DE932935CAE800D0B0E8 /* Jokes.swift in Sources */,
 				12A9DE902934CAEA00D0B0E8 /* ListOfFaveScreen.swift in Sources */,
 				12A9DEA52938479B00D0B0E8 /* JokeristViewModel.swift in Sources */,
-				12A9DE9D2938472200D0B0E8 /* JokeItems+CoreDataProperties.swift in Sources */,
-				12A9DE9F2938472400D0B0E8 /* JokeItems+CoreDataClass.swift in Sources */,
 				12A9DEB329384E4A00D0B0E8 /* CustomButton.swift in Sources */,
 				12A9DEBA2938879400D0B0E8 /* Constants.swift in Sources */,
 				1267871A292F07D00001A121 /* AppDelegate.swift in Sources */,
