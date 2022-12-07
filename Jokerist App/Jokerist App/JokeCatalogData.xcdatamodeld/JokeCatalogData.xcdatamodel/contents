@@ -3,5 +3,10 @@
     <entity name="JokeItems" representedClassName="JokeItems" syncable="YES" codeGenerationType="class">
         <attribute name="punchline" optional="YES" attributeType="String"/>
         <attribute name="setup" optional="YES" attributeType="String"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="setup"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
     </entity>
 </model>

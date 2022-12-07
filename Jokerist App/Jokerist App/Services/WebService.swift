@@ -26,5 +26,3 @@ class WebService:  NSObject {
         return try JSONDecoder().decode([Jokes].self, from: data)
     }
 }
-    
-

@@ -12,8 +12,3 @@ struct Constants {
         static let randomJokes = URL(string: "https://official-joke-api.appspot.com/random_ten")!
     }
 }
-
-//enum Constants: String {
-//    
-//    case randomJokesAPI = "https://official-joke-api.appspot.com/random_ten"
-//}

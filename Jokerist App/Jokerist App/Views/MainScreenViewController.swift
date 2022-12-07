@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainScreenViewController.swift
 //  Jokerist App
 //
 //  Created by jeremy.fermin on 11/24/22.
@@ -8,13 +8,12 @@
 import UIKit
 import CoreData
 
-class MainScreenView: UIViewController {
+class MainScreenViewController: UIViewController {
     
     private let viewModel = JokeristVM()
     
     var jokes: Jokes!
  
-    //MARK: JOKES LABEL
     private let label: UILabel = {
         let label = UILabel(frame: .zero)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -25,7 +24,6 @@ class MainScreenView: UIViewController {
         return label
     }()
     
-    //MARK: PUNCH LINE LABEL
     private let punchLine: UILabel = {
         let punchLine = UILabel(frame: .zero)
         punchLine.translatesAutoresizingMaskIntoConstraints = false
@@ -36,7 +34,6 @@ class MainScreenView: UIViewController {
         return punchLine
     }()
     
-    //MARK: REFRESH BUTTON
     private let refreshButton: UIButton = {
         let button = UIButton(frame: .zero)
         let image = UIImage(systemName: "arrow.clockwise")
@@ -48,8 +45,6 @@ class MainScreenView: UIViewController {
         return button
     }()
     
-    
-    //MARK: FAVE BUTTON
     private let faveButton: UIButton = {
         let faveButton = CustomButton()
         faveButton.configure(with: CustomButtonVM(text: "Add to Favorites",
@@ -72,7 +67,7 @@ class MainScreenView: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .systemYellow
-        title = "J🤪KES"
+        title = "JOKES 🤪"
         navigationController?.navigationBar.prefersLargeTitles = true
         
         view.addSubview(label)
@@ -98,12 +93,12 @@ class MainScreenView: UIViewController {
     }
     
     @objc func tapList() {
-        let listVC = ListOfFaveScreen()
+        let listVC = ListOfFaveScreenViewController()
         navigationController?.pushViewController(listVC, animated: true)
     }
     
     @objc func tapFavorite() {
-        let faveList = ListOfFaveScreen()
+        let faveList = ListOfFaveScreenViewController()
         faveList.addJoke(setup: label.text!, punch: punchLine.text!)
     }
     

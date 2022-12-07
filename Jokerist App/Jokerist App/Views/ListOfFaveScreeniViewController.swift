@@ -1,5 +1,5 @@
 //
-//  ListOfFaveScreen.swift
+//  ListOfFaveScreenViewController.swift
 //  Jokerist App
 //
 //  Created by jeremy.fermin on 11/28/22.
@@ -7,7 +7,7 @@
 import UIKit
 import CoreData
 
-class ListOfFaveScreen: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ListOfFaveScreenViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
@@ -23,7 +23,7 @@ class ListOfFaveScreen: UIViewController, UITableViewDelegate, UITableViewDataSo
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemYellow
-        title = "My Favorites ❤️"
+        title = "MY FAVORITES ❤️"
         
         view.addSubview(tableView)
         getAllJokes()

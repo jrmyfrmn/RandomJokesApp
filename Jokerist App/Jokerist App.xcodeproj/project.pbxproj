@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		1267871A292F07D00001A121 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12678719292F07D00001A121 /* AppDelegate.swift */; };
 		1267871C292F07D00001A121 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1267871B292F07D00001A121 /* SceneDelegate.swift */; };
-		1267871E292F07D00001A121 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1267871D292F07D00001A121 /* MainScreenView.swift */; };
+		1267871E292F07D00001A121 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1267871D292F07D00001A121 /* MainScreenViewController.swift */; };
 		12678723292F07D20001A121 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12678722292F07D20001A121 /* Assets.xcassets */; };
 		12678726292F07D20001A121 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12678724292F07D20001A121 /* LaunchScreen.storyboard */; };
-		12A9DE902934CAEA00D0B0E8 /* ListOfFaveScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A9DE8F2934CAEA00D0B0E8 /* ListOfFaveScreen.swift */; };
+		12A9DE902934CAEA00D0B0E8 /* ListOfFaveScreeniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A9DE8F2934CAEA00D0B0E8 /* ListOfFaveScreeniViewController.swift */; };
 		12A9DE932935CAE800D0B0E8 /* Jokes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A9DE922935CAE800D0B0E8 /* Jokes.swift */; };
-		12A9DEA52938479B00D0B0E8 /* JokeristViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A9DEA42938479B00D0B0E8 /* JokeristViewModel.swift */; };
+		12A9DEA52938479B00D0B0E8 /* JokeristVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A9DEA42938479B00D0B0E8 /* JokeristVM.swift */; };
 		12A9DEA82938486000D0B0E8 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A9DEA72938486000D0B0E8 /* WebService.swift */; };
 		12A9DEAE293849BF00D0B0E8 /* JokeCatalogData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 12A9DEAC293849BF00D0B0E8 /* JokeCatalogData.xcdatamodeld */; };
 		12A9DEB329384E4A00D0B0E8 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A9DEB229384E4A00D0B0E8 /* CustomButton.swift */; };
@@ -26,13 +26,13 @@
 		12678716292F07D00001A121 /* Jokerist App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jokerist App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12678719292F07D00001A121 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1267871B292F07D00001A121 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1267871D292F07D00001A121 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
+		1267871D292F07D00001A121 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		12678722292F07D20001A121 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12678725292F07D20001A121 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12678727292F07D20001A121 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		12A9DE8F2934CAEA00D0B0E8 /* ListOfFaveScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfFaveScreen.swift; sourceTree = "<group>"; };
+		12A9DE8F2934CAEA00D0B0E8 /* ListOfFaveScreeniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfFaveScreeniViewController.swift; sourceTree = "<group>"; };
 		12A9DE922935CAE800D0B0E8 /* Jokes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jokes.swift; sourceTree = "<group>"; };
-		12A9DEA42938479B00D0B0E8 /* JokeristViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokeristViewModel.swift; sourceTree = "<group>"; };
+		12A9DEA42938479B00D0B0E8 /* JokeristVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokeristVM.swift; sourceTree = "<group>"; };
 		12A9DEA72938486000D0B0E8 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		12A9DEAD293849BF00D0B0E8 /* JokeCatalogData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JokeCatalogData.xcdatamodel; sourceTree = "<group>"; };
 		12A9DEB229384E4A00D0B0E8 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
@@ -72,7 +72,6 @@
 			children = (
 				12678719292F07D00001A121 /* AppDelegate.swift */,
 				1267871B292F07D00001A121 /* SceneDelegate.swift */,
-				12A9DEA02938473400D0B0E8 /* JokeCatalog */,
 				12A9DEA32938478100D0B0E8 /* ViewModel */,
 				12A9DE912935CAA100D0B0E8 /* Model */,
 				12A9DE8C2930BD4900D0B0E8 /* Views */,
@@ -89,8 +88,8 @@
 		12A9DE8C2930BD4900D0B0E8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1267871D292F07D00001A121 /* MainScreenView.swift */,
-				12A9DE8F2934CAEA00D0B0E8 /* ListOfFaveScreen.swift */,
+				1267871D292F07D00001A121 /* MainScreenViewController.swift */,
+				12A9DE8F2934CAEA00D0B0E8 /* ListOfFaveScreeniViewController.swift */,
 				12A9DEB129384E3600D0B0E8 /* CustomButtonAndCell */,
 			);
 			path = Views;
@@ -104,17 +103,10 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		12A9DEA02938473400D0B0E8 /* JokeCatalog */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = JokeCatalog;
-			sourceTree = "<group>";
-		};
 		12A9DEA32938478100D0B0E8 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				12A9DEA42938479B00D0B0E8 /* JokeristViewModel.swift */,
+				12A9DEA42938479B00D0B0E8 /* JokeristVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -217,10 +209,10 @@
 				12A9DEAE293849BF00D0B0E8 /* JokeCatalogData.xcdatamodeld in Sources */,
 				12A9DEB529384E4F00D0B0E8 /* CustomCell.swift in Sources */,
 				12A9DEA82938486000D0B0E8 /* WebService.swift in Sources */,
-				1267871E292F07D00001A121 /* MainScreenView.swift in Sources */,
+				1267871E292F07D00001A121 /* MainScreenViewController.swift in Sources */,
 				12A9DE932935CAE800D0B0E8 /* Jokes.swift in Sources */,
-				12A9DE902934CAEA00D0B0E8 /* ListOfFaveScreen.swift in Sources */,
-				12A9DEA52938479B00D0B0E8 /* JokeristViewModel.swift in Sources */,
+				12A9DE902934CAEA00D0B0E8 /* ListOfFaveScreeniViewController.swift in Sources */,
+				12A9DEA52938479B00D0B0E8 /* JokeristVM.swift in Sources */,
 				12A9DEB329384E4A00D0B0E8 /* CustomButton.swift in Sources */,
 				12A9DEBA2938879400D0B0E8 /* Constants.swift in Sources */,
 				1267871A292F07D00001A121 /* AppDelegate.swift in Sources */,
