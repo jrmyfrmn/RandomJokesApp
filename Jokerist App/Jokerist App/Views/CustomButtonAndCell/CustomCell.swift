@@ -18,7 +18,6 @@ class CustomCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        // Set any attributes of your UI components here.
         setup.translatesAutoresizingMaskIntoConstraints = false
         setup.numberOfLines = 5
         setup.sizeToFit()
@@ -26,7 +25,6 @@ class CustomCell: UITableViewCell {
         punchline.translatesAutoresizingMaskIntoConstraints = false
         punchline.sizeToFit()
         
-        // Add the UI components
         contentView.addSubview(setup)
         contentView.addSubview(punchline)
         
@@ -40,8 +38,7 @@ class CustomCell: UITableViewCell {
             punchline.topAnchor.constraint(equalTo: setup.bottomAnchor),
             punchline.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
         ])
-    }
-    
+    }    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
