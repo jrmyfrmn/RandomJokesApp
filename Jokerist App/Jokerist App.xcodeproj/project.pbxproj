@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		125493FA294312E3004AC0F1 /* JokesDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125493F9294312E3004AC0F1 /* JokesDataManager.swift */; };
 		1267871A292F07D00001A121 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12678719292F07D00001A121 /* AppDelegate.swift */; };
 		1267871C292F07D00001A121 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1267871B292F07D00001A121 /* SceneDelegate.swift */; };
 		1267871E292F07D00001A121 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1267871D292F07D00001A121 /* MainScreenViewController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		125493F9294312E3004AC0F1 /* JokesDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokesDataManager.swift; sourceTree = "<group>"; };
 		12678716292F07D00001A121 /* Jokerist App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jokerist App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12678719292F07D00001A121 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1267871B292F07D00001A121 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		125493F8294312D7004AC0F1 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				12A9DEAC293849BF00D0B0E8 /* JokeCatalogData.xcdatamodeld */,
+				125493F9294312E3004AC0F1 /* JokesDataManager.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
 		1267870D292F07D00001A121 = {
 			isa = PBXGroup;
 			children = (
@@ -80,7 +91,7 @@
 				12678722292F07D20001A121 /* Assets.xcassets */,
 				12678724292F07D20001A121 /* LaunchScreen.storyboard */,
 				12678727292F07D20001A121 /* Info.plist */,
-				12A9DEAC293849BF00D0B0E8 /* JokeCatalogData.xcdatamodeld */,
+				125493F8294312D7004AC0F1 /* Database */,
 			);
 			path = "Jokerist App";
 			sourceTree = "<group>";
@@ -212,6 +223,7 @@
 				1267871E292F07D00001A121 /* MainScreenViewController.swift in Sources */,
 				12A9DE932935CAE800D0B0E8 /* Jokes.swift in Sources */,
 				12A9DE902934CAEA00D0B0E8 /* ListOfFaveScreeniViewController.swift in Sources */,
+				125493FA294312E3004AC0F1 /* JokesDataManager.swift in Sources */,
 				12A9DEA52938479B00D0B0E8 /* JokeristVM.swift in Sources */,
 				12A9DEB329384E4A00D0B0E8 /* CustomButton.swift in Sources */,
 				12A9DEBA2938879400D0B0E8 /* Constants.swift in Sources */,
